@@ -1,0 +1,56 @@
+.settings {
+    display: none;
+    width: 300px;
+    height: 520px;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 13px 0px rgba(34, 60, 80, 0.2);
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    padding: 10px 0;
+    .settings-list{
+        width: 100%;
+        .settings-item{
+            width: 100%;
+            .settings-button{
+                width: 100%;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                border: none;
+                border-radius: 0;
+                cursor: pointer;
+                background: #fff;
+                justify-content: flex-start;
+                &:hover{
+                    background: #F4F4F4;
+                }
+                p{
+                    color: #000;
+                    font-weight: thin;
+                    margin-left: 10%;      
+                }i{
+                    text-align: left;
+                    color: gray;
+                    width: 10%;
+                    margin-left: 5px;
+                    text-align: center;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    .copyright{
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.settings-active{
+    display: block;
+}

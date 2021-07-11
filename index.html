@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Web</title>
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <link rel="stylesheet" href="./assets/vendor/bootstrap-grid.min.css">
+    <link rel="shortcut icon" href="https://telegram.org/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="containerr row">
+        <aside class="sidebar col-4">
+            <div class="chats">
+                <div class="chat-top">
+                    <button class="hamburger" type="button">
+                        <i class="fas fa-bars"></i>
+
+                    </button>
+                    <div class="search-chat">
+                        <input autocomplete="off" type="text" id="search" placeholder="Search">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+
+                <ul class="chats-list" id="chats-list">
+
+                </ul>
+            </div>
+        </aside>
+        <div class="parent-messages col-8">
+            <button class="chat-profile">
+                <img src="https://picsum.photos/100" width="70" height="70" alt="Chat profile img"
+                    class="chat-profile-img">
+                <div class="chat-profile-righter">
+                    <p class="chat-profile-name"></p>
+                    <p class="activity">last seen recently</p>
+                </div>
+            </button>
+            <div class="messages">
+
+                <ul class="messages-list" id="messages-list">
+                </ul>
+
+            </div>
+            <div class="send-msg">
+                <form class="send-msg-form">
+                    <i class="far fa-smile smiley-icon"></i>
+                    <input type="text" class="send-message" id="message-input" autocomplete="off" required
+                        placeholder="Send message...">
+                    <i class="fas fa-paperclip papclip"></i>
+                    <button class="send-message-button" type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <aside class="settings">
+        <ul class="settings-list">
+            <li class="settings-item">
+                <button class="settings-button">
+                    <i class="far fa-bookmark"></i>
+                    <p>
+                        Saved Messages
+                    </p>
+                </button>
+            </li>
+            <li class="settings-item">
+                <button class="settings-button">
+                    <i class="fas fa-inbox"></i>
+                    <p>
+                        Archived Chats
+                    </p>
+                </button>
+            </li>
+            <li class="settings-item">
+                <button class="settings-button" id="contact-button">
+                    <i class="fas fa-user-plus"></i>
+                    <p>
+                        Add Contact
+                    </p>
+                </button>
+            </li>
+            <li class="settings-item">
+                <button class="settings-button">
+                    <i class="fas fa-cog"></i>
+                    <p>
+                        Settings
+                    </p>
+                </button>
+            </li>
+            <li class="settings-item">
+                <button class="settings-button">
+                    <i class="far fa-moon"></i>
+                    <p>
+                        Night Mode
+                    </p>
+                </button>
+            </li>
+            <li class="settings-item">
+                <button class="settings-button">
+                    <i class="far fa-question-circle"></i>
+                    <p>
+                        Telegram Features
+                    </p>
+                </button>
+            </li>
+            <li class="settings-item">
+                <button class="settings-button">
+                    <i class="fas fa-bug"></i>
+                    <p>
+                        Report Bugs
+                    </p>
+                </button>
+            </li>
+        </ul>
+        <p class="copyright">This super app was made by <a href="https://t.me/not_an_old_man">Usmonkhon Latipov</a></p>
+    </aside>
+    <div class="add-contact">
+        <div class="add-contact-container">
+            <button class="remove-add-contact">X</button>
+            <p class="add-contact-title">Add Contact</p>
+            <form class="add-conact-form">
+                <input type="text" autocomplete="off" id="contact-name-input" required placeholder="Name of your contact">
+                <input type="text" autocomplete="off" id="contact-image-input" required placeholder="Link to cour contact' profile image">
+                <input type="text"  autocomplete="off" id="contact-number-input" required placeholder="Phone number of your contact">
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
